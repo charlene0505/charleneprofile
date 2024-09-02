@@ -48,13 +48,15 @@ body{
     justify-items: center;
     align-items: start; /* Align content to the start vertically */
     margin-top: 10%; /* Center the grid container on the page */
-    padding: 0px;
+ 
 }
 .grid-item {
     margin-top: 15%;
     margin-bottom: 10%;
-    text-align: center; /* Center text inside each grid item */
+    text-align: center;
+    align-items: center; /* Center text inside each grid item */
 }
+
 .image-column img {
     width: 100%; /* Adjust the image width as needed */
     height: auto;
@@ -177,8 +179,9 @@ body{
 
 .button{
     border-radius: 10px;
-    width: 300px;
+    width:70%;
     display:flex;
+    height: 30px;
     flex-direction: row;
     text-align: center;
     background-color: #00FF00;
@@ -186,7 +189,6 @@ body{
     border-left: 0.5px solid #000;
     border-right: 3px solid #000;
     border-bottom: 3px solid #000;
-    display: flex; /* Use flexbox to center content */
     align-items: center; /* Vertical centering */
     justify-content: center;
 }
@@ -199,8 +201,9 @@ body{
 }
 .content{
     border-radius: 10px;
-    padding: 0px;
-    max-width: 300px;
+    max-width: 600px;
+    width:70%;
+
     text-align: center;
     margin-top: 10px;
     display: flex; /* Use flexbox to center content */
@@ -213,6 +216,7 @@ body{
     border-bottom: 3px solid #000;
     background-color: #ffffff;
 }
+
 .content img{
     margin-top: 5%;
     height: 25px;
@@ -272,8 +276,10 @@ body{
 }
 
 .image-container {
+    margin-top: 12%;
+    border: #000 0.5px solid;
     position: relative; /* Establishes a relative positioning context */
-    height: 500px; /* Set a height for the container */
+    height: 200px; /* Set a height for the container */
 }
 .overlap-image {
     position: absolute; /* Allows the images to be positioned absolutely within the container */
@@ -284,41 +290,34 @@ body{
 .image1 {
     z-index: 1; /* Lowest stack order */
     width: 160px;
-    top: 130px; /* Offset slightly from the top */
-    left:250px
+    top: 30%; /* Offset slightly from the top */
+    left:70%;
 }
 
 .image2 {
     z-index: 1; /* Middle stack order */
-    top: 150px; /* Offset slightly from the top */
-    left: 60px; /* Offset slightly from the left */
+    top: 30%; /* Offset slightly from the top */
+    left: 22%; /* Offset slightly from the left */
     width: 100px;
 }
 
 .image3 {
     z-index: 5; /* Highest stack order */
-    top: 120px; /* More offset from the top */
-    left: 120px; /* More offset from the left */
+    top: 25%; /* More offset from the top */
+    left: 35%; /* More offset from the left */
     width: 100px;
 
 }
 .image4 {
     z-index: 3; /* Highest stack order */
-    top: 100px; /* More offset from the top */
-    left: 150px; /* More offset from the left */
+    top: 30%; /* More offset from the top */
+    left: 45%; /* More offset from the left */
     width: 80px;
 }
 .image5 {
     z-index: 1; /* Highest stack order */
-    top: 50px; /* More offset from the top */
-    left: -90px; /* More offset from the left */
+    left: -8%; /* More offset from the left */
     width: 400px;
-}
-.image6 {
-    z-index: -9;
-    top: 80px; /* More offset from the top */
-    left: 120px; /* More offset from the left */
-    width: 150px;
 }
 
 
@@ -352,8 +351,6 @@ body{
 .word-notificationcontainer{
     width: 100%;
     display: grid; /* Enable CSS Grid */
-    grid-template-rows: 1fr 1fr; 
-    gap: 150px;
 }
 .quotetext{
     position: relative; 
@@ -421,4 +418,16 @@ html{
 .rotating-image {
     display: none; /* Hidden by default */
     transition: transform 1s ease-in-out; /* Smooth transition */
+}
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    justify-content: center; /* Center items vertically within the container */
+    gap: 20px; /* Add space between items */
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column; /* Align elements vertically within each item */
+    align-items: center; /* Center items horizontally */
 }
